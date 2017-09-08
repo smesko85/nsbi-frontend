@@ -1,0 +1,30 @@
+{
+  "name": "nsbi-frontend",
+  "version": "1.0.0",
+  "description": "Frontend za Sajt Novosadske Biciklisticke Inicijative",
+  "private": true,
+  "author": "Vega Hackaton 2017",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smesko85/nsbi-frontend.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "slick-carousel": "^1.7.1",
+    "tachyons-sass": "^4.8.1"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "^2",
+    "browser-sync-brunch": "0.0.9",
+    "brunch": "^2",
+    "clean-css-brunch": "^2",
+    "nunjucks-brunch": "^0.3.3",
+    "sass-brunch": "^2.10.4",
+    "uglify-js-brunch": "^2"
+  }
+}
