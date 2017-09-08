@@ -1,0 +1,11 @@
+.o-justifize {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.o-justifize--middle {
+    align-items: center;
+    align-content: center;
+}

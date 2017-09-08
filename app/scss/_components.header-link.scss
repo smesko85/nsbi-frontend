@@ -1,0 +1,11 @@
+.c-header-link {
+    @extend .f5;
+    @extend .link;
+    @extend .dim;
+    @extend .black;
+    @extend .fw5;
+    @extend .pa2;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
