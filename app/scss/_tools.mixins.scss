@@ -2,3 +2,21 @@
     width: $width;
     height: $height;
 }
+
+@mixin mq-ns {
+    @media #{$breakpoint-not-small} {
+        @content;
+    }
+}
+
+@mixin mq-m {
+    @media #{$breakpoint-medium} {
+        @content;
+    }
+}
+
+@mixin mq-l {
+    @media #{$breakpoint-large} {
+        @content;
+    }
+}

@@ -1,16 +1,24 @@
 .c-article-preview {
     display: flex;
+    flex-direction: column;
     width: 100%;
 
     &:nth-child(2n) {
         direction: rtl;
     }
+
+    @include mq-l {
+        flex-direction: row;
+    }
 }
 
 .c-article-preview__img {
     max-height: 400px;
-    width: 50%;
     overflow: hidden;
+
+    @include mq-l {
+        width: 50%;
+    }
 
     img {
         object-fit: cover;
@@ -25,5 +33,8 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    width: 50%;
+
+    @include mq-l {
+        width: 50%;
+    }
 }

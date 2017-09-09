@@ -9,3 +9,13 @@
 .u-mt-auto {
     margin-tip: auto !important;
 }
+
+.u-lh2 {
+    line-height: 2 !important;
+}
+
+.u-flex-1-l {
+    @include mq-l {
+        flex: 1 !important;
+    }
+}

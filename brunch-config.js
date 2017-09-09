@@ -1,6 +1,14 @@
 // See http://brunch.io for documentation.
 exports.files = {
-  javascripts: {joinTo: 'js/app.js'},
+  javascripts: {
+    joinTo: {
+      'js/app.js': ['app/*.js'],
+      'js/vendor.js': [
+        'bower_components/jquery/dist/jquery.js',
+        'bower_components/slick-carousel/slick/slick.js'
+      ]
+    }
+  },
   stylesheets: {joinTo: 'css/app.css'}
 };
 
@@ -11,4 +19,8 @@ exports.server = {
 
 exports.watcher = {
   usePolling: true
+};
+
+exports.modules = {
+  wrapper: false,
 };

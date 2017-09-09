@@ -1,0 +1,20 @@
+{
+  "name": "nsbi-frontend",
+  "description": "Frontend za Sajt Novosadske Biciklisticke Inicijative",
+  "main": "",
+  "authors": [
+    "Vega Hackaton 2017"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/smesko85/nsbi-frontend",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.7.1"
+  }
+}
