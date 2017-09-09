@@ -17,6 +17,10 @@
     overflow: hidden;
 
     @include mq-l {
+        width: 40%;
+    }
+
+    @include mq($breakpoint-article-preview) {
         width: 50%;
     }
 
@@ -28,13 +32,18 @@
 .c-article-preview__body {
     @extend .ph5;
     @extend .pv2;
-    @extend .f4;
+    @extend .f5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
 
     @include mq-l {
+        width: 60%;
+    }
+
+    @include mq($breakpoint-article-preview) {
+        font-size: 1.25rem;
         width: 50%;
     }
 }
