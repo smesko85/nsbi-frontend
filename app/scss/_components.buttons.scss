@@ -1,0 +1,15 @@
+.c-btn {
+    @extend .pv2;
+    @extend .ph4;
+    display: inline-block;
+    background: $color-blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    vertical-align: middle;
+
+    &:hover {
+        background: darken($color-blue, 30%);
+    }
+}

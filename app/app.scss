@@ -6,6 +6,7 @@
 
 // Base
 @import './scss/base.html';
+@import './scss/base.text';
 
 // Vendor
 @import '../node_modules/tachyons-sass/tachyons';
@@ -21,6 +22,9 @@
 @import './scss/components.header-link';
 @import './scss/components.carousel-dots';
 @import './scss/components.carousel';
+@import './scss/components.footer';
+@import './scss/components.article-preview';
+@import './scss/components.buttons';
 
 // Utils
 @import './scss/utils';

@@ -4,6 +4,7 @@
     left: 0;
     right: 0;
     text-align: center;
+    padding: 0;
 
     button {
         display: none;
@@ -24,6 +25,7 @@
 
             &:after {
                 content: '';
+                pointer-events: none;
                 position: absolute;
                 top: 50%;
                 left: 100%;

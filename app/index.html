@@ -3,33 +3,91 @@
   {% include "./_head.html" %}
   <body>
     {% include "./_header.html" %}
-    <div class="c-carousel" data-carousel>
-      <div>
-        <div class="aspect-ratio aspect-ratio--16x9 relative">
-          <img class="aspect-ratio--object" src="http://lorempixel.com/1000/600/sports/1" alt="">
+    <main>
+      <!-- hero section  -->
+      <section>
+        <div class="c-carousel" data-carousel>
+          <div>
+            <div class="aspect-ratio aspect-ratio--16x9">
+              <img class="aspect-ratio--object" src="http://lorempixel.com/1000/600/sports/1" alt="">
+            </div>
+          </div>
+          <div>
+            <div class="aspect-ratio aspect-ratio--16x9">
+              <img class="aspect-ratio--object" src="http://lorempixel.com/1000/600/sports/2" alt="">
+            </div>
+          </div>
+          <div>
+            <div class="aspect-ratio aspect-ratio--16x9">
+              <img class="aspect-ratio--object" src="http://lorempixel.com/1000/600/sports/3" alt="">
+            </div>
+          </div>
+          <div>
+            <div class="aspect-ratio aspect-ratio--16x9">
+              <img class="aspect-ratio--object" src="http://lorempixel.com/1000/600/sports/4" alt="">
+            </div>
+          </div>
+          <div>
+            <div class="aspect-ratio aspect-ratio--16x9">
+              <img class="aspect-ratio--object" src="http://lorempixel.com/1000/600/sports/5" alt="">
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-        <div class="aspect-ratio aspect-ratio--16x9 relative">
-          <img class="aspect-ratio--object" src="http://lorempixel.com/1000/600/sports/2" alt="">
+      </section>
+      <!-- end hero section  -->
+
+      <!-- main section -->
+      <section class="c-article-preview">
+        <div class="c-article-preview__img">
+          <div class="aspect-ratio aspect-ratio--8x5">
+            <img class="aspect-ratio--object" src="/images/home-content-1.png">
+          </div>
         </div>
-      </div>
-      <div>
-        <div class="aspect-ratio aspect-ratio--16x9 relative">
-          <img class="aspect-ratio--object" src="http://lorempixel.com/1000/600/sports/3" alt="">
+        <div class="c-article-preview__body">
+          <h3>O nama</h3>
+          <p>
+            Grupa građana "Novosadska biciklistička inicijativa" je
+            oformljena posle protesta 2010. godine koji se desio povodom
+            iznenadne i intenzivne akcije novosadske policije. Tom prilikom
+            je kažnjeno više stotina biciklista zbog vožnje u pešačkoj zoni.
+            Posle protesta došlo je do okupljanja pojedinaca koji su na
+            različite načine uključeni u svom profesionalnom radu u
+            "biciklističke teme". Među tim pojedincima su saobraćajni
+            inženjeri, arhitekte, inženjeri zaštite životne sredine, kao i
+            sportski radnici.
+          </p>
+          <div class="u-mt-auto pb3">
+            <a class="c-btn" href="#">
+              Vise
+            </a>
+          </div>
         </div>
-      </div>
-      <div>
-        <div class="aspect-ratio aspect-ratio--16x9 relative">
-          <img class="aspect-ratio--object" src="http://lorempixel.com/1000/600/sports/4" alt="">
+      </section>
+      <section class="c-article-preview">
+        <div class="c-article-preview__img">
+          <div class="aspect-ratio aspect-ratio--8x5">
+            <img class="aspect-ratio--object" src="/images/home-content-2.png">
+          </div>
         </div>
-      </div>
-      <div>
-        <div class="aspect-ratio aspect-ratio--16x9 relative">
-          <img class="aspect-ratio--object" src="http://lorempixel.com/1000/600/sports/5" alt="">
+        <div class="c-article-preview__body">
+          <h3>Vesti</h3>
+          <p>
+            Kinezu koji nije zaključao iznajmljeni bicikl kako je predviđeno
+            kada se odvezao na posao, stigao je račun od 21,4 miliona juana
+            (oko 2,7 miliona eura) za putovanje, javio je Daily Telegraph.
+            Bicikl pripada kompaniji Mobike koja je u poslednje vreme počela
+            sa probojem na evropsko tržište.
+          </p>
+          <div class="u-mt-auto pb3">
+            <a class="c-btn" href="#">
+              Vise
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <!-- end main section  -->
+    </main>
+    {% include './_footer.html' %}
     <script src="/js/app.js"></script>
     <script>require('init')</script>
   </body>

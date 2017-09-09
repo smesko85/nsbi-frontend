@@ -1,0 +1,16 @@
+dt {
+    font-weight: 600;
+}
+
+dd {
+    margin-left: 0;
+    font-weight: 300;
+}
+
+dd + dt {
+    margin-top: 1.5em;
+}
+
+address {
+    font-style: normal;
+}
