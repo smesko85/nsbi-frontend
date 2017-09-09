@@ -5,31 +5,9 @@
         <a href="/">
           <img class="h3" src="/images/logo.png" alt="Novosadska Biciklisticka Inicijativa">
         </a>
-        <ul class="o-list-inline tr dn dn-m dib-ns u-flex-1">
-          <li><a class="c-header-link" href="#">O nama</a></li>
-          <li class="relative">
-            <a class="c-header-link" data-toggle data-target="#submenu">
-              Vesti
-            </a>
-            <ul class="absolute list z-max left-0 bg-white pa2 pb0 dn" id="submenu">
-              <li class="u-lh2 nowrap bt b--silver">
-                <a class="c-header-link" href="#">Category 1</a>
-              </li>
-              <li class="u-lh2 nowrap bt b--silver">
-                <a class="c-header-link" href="#">Category 2</a>
-              </li>
-              <li class="u-lh2 nowrap bt b--silver">
-                <a class="c-header-link" href="#">Category 3</a>
-              </li>
-            </ul>
-          </li>
-          <li><a class="c-header-link" href="#">Biciklograd</a></li>
-          <li><a class="c-header-link" href="#">Servisne informacije</a></li>
-          <li><a class="c-header-link" href="#">Kontakt</a></li>
-        </ul>
-      </div>
+     </div>
     </nav>
-
+    {% include './_desktop-nav.html' %}
     <div class="relative">
       <button class="bg-transparent bn" type="button" data-toggle data-target="#language-select">
         SR
@@ -41,17 +19,6 @@
         </ul>
       </div>
     </div>
-    <div class="dn-ns db-m">
-      <button class="bg-transparent bn" type="button" data-toggle data-target="#nav">
-        <img width="24" src="/images/menu.svg" alt="">
-      </button>
-      <ul class="list pa1 fixed z-max bg-white u-lh2 left-0 right-0 tc dn" id="nav">
-        <li><a class="c-header-link" href="#">O nama</a></li>
-        <li><a class="c-header-link" href="#">Vesti</a></li>
-        <li><a class="c-header-link" href="#">Biciklograd</a></li>
-        <li><a class="c-header-link" href="#">Servisne informacije</a></li>
-        <li><a class="c-header-link" href="#">Kontakt</a></li>
-      </ul>
-    </div>
+    {% include './_mobile-nav.html' %}
   </div>
 </header>

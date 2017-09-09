@@ -1,0 +1,32 @@
+.c-nav {
+    ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+.c-nav--desktop {
+    display: none;
+
+    @include mq-l {
+        display: block;
+    }
+}
+
+.c-nav--mobile {
+    display: block;
+
+    @include mq-l {
+        display: none;
+    }
+
+    ul {
+        li {
+            display: block;
+        }
+    }
+}

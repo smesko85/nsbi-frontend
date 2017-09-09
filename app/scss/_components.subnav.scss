@@ -1,0 +1,34 @@
+.c-subnav {
+    transition: .2s all;
+    transition-delay: .4s;
+
+    @include mq-l {
+        @include invisible;
+    }
+
+    &:hover {
+        @include visible;
+    }
+
+    li {
+        @extend .bt-l;
+        @extend .b--silver;
+        @extend .nowrap;
+
+        &:first-child {
+            margin-top: -.5em;
+
+            @include mq-l {
+                margin-top: 0;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 1em;
+
+            @include mq-l {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

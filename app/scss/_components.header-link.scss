@@ -8,5 +8,15 @@
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
+
+    &.is-active {
+        color: #3885c7;
+        font-weight: 600;
+    }
+
+    &:hover + .c-subnav {
+        @include visible;
+        transition-delay: 0;
+    }
 }
 
