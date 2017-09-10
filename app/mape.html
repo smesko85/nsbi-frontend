@@ -1,0 +1,26 @@
+{% extends './_page.html' %}
+
+{% block main %}
+<div class="aspect-ratio aspect-ratio--8x5 mb2">
+  <div class="aspect-ratio--object" data-map>
+  </div>
+</div>
+<div class="tc">
+  <button
+    class="c-btn c-btn--small mr1 mb1"
+    type="button"
+    data-map-layer="http://vdumitraskovic.com/nsbike.kmz"
+  >
+    <img class="h2 v-mid" src="/images/benzinske-pumpe.svg">
+    Bike Stations
+  </button>
+  <button
+    class="c-btn c-btn--small mr1 mb1"
+    type="button"
+    data-map-layer="http://vdumitraskovic.com/bsmapa.kml"
+  >
+    <img class="h2 v-mid" src="/images/bicikl-staza.svg">
+    Staze
+  </button>
+</div>
+{% endblock %}

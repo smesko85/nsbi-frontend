@@ -16,6 +16,10 @@ exports.server = {
   indexPath: '/app/index.html',
 };
 
+exports.modules = {
+  wrapper: false
+};
+
 exports.watcher = {
   usePolling: true
 };
