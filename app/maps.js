@@ -2,11 +2,13 @@ var NSBIMap = (function GMap() {
   var gmap = null;
 
   return function(layers) {
+    var $mapHolder = $('[data-map]');
+    if (!$mapHolder.get(0)) return {};
     if (gmap) return gmap;
     gmap = {};
 
     var NoviSadLocation = {lat: 45.2671, lng: 19.8335};
-    gmap.map = new google.maps.Map($('[data-map]').get(0), {
+    gmap.map = new google.maps.Map($mapHolder.get(0), {
       center: NoviSadLocation,
       zoom: 13
     });
@@ -42,6 +44,8 @@ function NSBIInitMap() {
   }
 
   var $mapControls = $('[data-map-layer]');
+  if (!$mapControls.get(0)) return;
+
   var layers = $.map($mapControls, function(el) {
     return $(el).data('map-layer');
   });

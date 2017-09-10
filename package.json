@@ -20,7 +20,6 @@
     "auto-reload-brunch": "^2",
     "browser-sync-brunch": "0.0.9",
     "brunch": "^2",
-    "clean-css-brunch": "^2",
     "nunjucks-brunch": "^0.3.3",
     "pleeease-brunch": "^3.0.0",
     "sass-brunch": "^2.10.4",

@@ -28,6 +28,6 @@ exports.plugins = {
   pleeease: {
     autoprefixer: {
       browsers: ['last 8 versions']
-    }
+    },
   }
-}
+};
