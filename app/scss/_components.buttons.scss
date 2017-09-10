@@ -8,9 +8,15 @@
     color: #fff;
     border: none;
     vertical-align: middle;
+    transition: .2s all;
 
     &:hover {
         background: darken($color-blue, 30%);
+    }
+
+    &.is-disabled,
+    &:disabled {
+        background: desaturate(lighten($color-blue, 20%), 60%);
     }
 }
 

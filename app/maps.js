@@ -25,14 +25,19 @@ var NSBIMap = (function GMap() {
 
 function NSBIInitMap() {
   function toggleLayer(layer, map) {
-    return function() {
-      layer.getMap() ? layer.setMap(null) : layer.setMap(map)
-    };
+    layer.getMap() ? layer.setMap(null) : layer.setMap(map)
   };
+
+  function onClick(layer, map) {
+    return function() {
+      $(this).toggleClass('is-disabled');
+      toggleLayer(layer, map);
+    }
+  }
 
   function bindEvents(gmap) {
     gmap.layers.forEach(function(item, index) {
-      $($mapControls.get(index)).click(toggleLayer(item, gmap.map));
+      $($mapControls.get(index)).click(onClick(item, gmap.map));
     });
   }
 

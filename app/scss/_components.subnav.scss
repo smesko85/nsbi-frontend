@@ -10,25 +10,27 @@
         @include visible;
     }
 
-    li {
-        @extend .bt-l;
-        @extend .b--silver;
-        @extend .nowrap;
-        display: block;
+    ul {
+        li {
+            @extend .bt-l;
+            @extend .b--silver;
+            @extend .nowrap;
+            display: block;
 
-        &:first-child {
-            margin-top: -.5em;
+            &:first-child {
+                margin-top: -.5em;
 
-            @include mq-l {
-                margin-top: 0;
+                @include mq-l {
+                    margin-top: 0;
+                }
             }
-        }
 
-        &:last-child {
-            margin-bottom: 1em;
+            &:last-child {
+                margin-bottom: 1em;
 
-            @include mq-l {
-                margin-bottom: 0;
+                @include mq-l {
+                    margin-bottom: 0;
+                }
             }
         }
     }
