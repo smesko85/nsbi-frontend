@@ -1,0 +1,23 @@
+.c-faq {
+    dt {
+        cursor: pointer;
+
+        &:before {
+            content: '▶';
+            display: inline-block;
+            font-size: .65em;
+            margin-right: .5em;
+            vertical-align: middle;
+            transition: .5s all;
+        }
+
+        &.is-active:before {
+            transform: rotate(90deg);
+        }
+    }
+
+    dd {
+        margin-top: 0.5em;
+        padding-left: 1em;
+    }
+}
