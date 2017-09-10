@@ -1,0 +1,19 @@
+.c-input {
+    @extend .input-reset;
+    @extend .f5;
+    @extend .ba;
+    @extend .b--black-10;
+    @extend .black-80;
+    @extend .bg-white;
+    @extend .pa2;
+    @extend .lh-solid;
+
+    &:hover:not(:focus) {
+        @extend .b--black-20;
+    }
+
+    &:focus {
+        @extend .b--black-60;
+        outline: none;
+    }
+}

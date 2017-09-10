@@ -1,0 +1,54 @@
+{% extends './_page.html' %}
+
+{% block main %}
+<section class="o-wrapper">
+  <form class="bg-near-white mw7 center pa4" action="send-contact" method="POST" >
+    <div class="flex">
+      <input
+        name="name"
+        id="name"
+        placeholder="{{ elements.field_name_label['#items'][0].value }}"
+        required="true"
+        type="text"
+        class="c-input u-flex-1 db"
+      >
+      <span class="red f7 v-top ml2 nr3" title="required">*</span>
+    </div>
+    <div class="flex mt3">
+      <input
+        name="email"
+        id="email"
+        placeholder="{{ elements.field_email_label['#items'][0].value }}"
+        required="required"
+        type="email"
+        class="c-input u-flex-1 db"
+      >
+      <span class="red f7 v-top ml2 nr3" title="required">*</span>
+    </div>
+    <div class="flex mt3">
+      <select name="subject" id="subject" required="required" class="c-select u-flex-1 db">
+        <option disabled selected>Select subject</option>
+        {% for item in elements.field_subject['#items'] %}
+        <option value="{{ item.value }}">{{ item.value }}</option>
+        {% endfor %}
+      </select>
+      <span class="red f7 v-top ml2 nr3" title="required">*</span>
+    </div>
+    <div class="flex mt3">
+      <textarea
+        name="body"
+        id="body"
+        placeholder="{{ elements.field_body_message_label['#items'][0].value }}"
+        required="required"
+        class="c-textarea u-flex-1"
+        rows="10"
+      >
+      </textarea>
+      <span class="red f7 v-top ml2 nr3" title="required">*</span>
+    </div>
+    <div class="tr mt4">
+      <button class="c-btn" type="submit">{{ elements.field_send_message_button_label['#items'][0].value | default('send')}}</button>
+    </div>
+  </form>
+</section>
+{% endblock %}
