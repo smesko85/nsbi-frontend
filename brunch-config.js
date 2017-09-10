@@ -20,6 +20,10 @@ exports.watcher = {
   usePolling: true
 };
 
-exports.modules = {
-  wrapper: false,
-};
+exports.plugins = {
+  pleeease: {
+    autoprefixer: {
+      browsers: ['last 8 versions']
+    }
+  }
+}
